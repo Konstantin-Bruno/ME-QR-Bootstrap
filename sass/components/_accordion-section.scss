@@ -1,0 +1,42 @@
+.accordion {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #c9c9c9;
+  outline: none;
+  transition: 0.5s;
+  &__item {
+    font-family: "Arial";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    color: $text-color;
+    margin: 0 auto;
+  }
+
+  &-ic {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    width: 12px;
+    height: 8px;
+  }
+}
+
+.active {
+  color: #d63864;
+}
+
+.active .accordion-ic {
+  transform: rotate(180deg);
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.item-3 {
+  padding-bottom: 63px;
+}

@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+  color: $text-color;
+}
+
+.container {
+  max-width: 1093px;
+}
+
+.secondary-title {
+  font-family: "Arial";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.55;
+  padding-bottom: 20px;
+}
+
+.description {
+  font-family: "Helvetica";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.item__description {
+  font-family: "Helvetica";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.second-section {
+  background-color: $background-color;
+}
+
+.text-ic {
+  width: 90px;
+  height: 90px;
+}
