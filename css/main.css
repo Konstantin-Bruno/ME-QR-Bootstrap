@@ -377,15 +377,24 @@ body {
   color: #ffffff;
   background-image: -webkit-gradient(linear, left top, right top, from(#040013), color-stop(54.31%, #42063f), color-stop(99.9%, #3a047d));
   background-image: linear-gradient(90deg, #040013 0%, #42063f 54.31%, #3a047d 99.9%);
-}
-.hero__container {
   height: 538px;
 }
-@media screen and (min-width: 1200px) {
-  .hero__container {
-    background-image: url(../images/hero-bg.png);
+@media screen and (min-width: 1220px) {
+  .hero {
+    background-image: url(../images/hero-bg.png), -webkit-gradient(linear, left top, right top, from(#040013), color-stop(54.31%, #42063f), color-stop(99.9%, #3a047d));
+    background-image: url(../images/hero-bg.png), linear-gradient(90deg, #040013 0%, #42063f 54.31%, #3a047d 99.9%);
     background-repeat: no-repeat;
-    background-position: right 0 bottom 0;
+    background-size: 637px 338px, auto;
+    background-position: right 25% bottom 0, 0 0;
+  }
+}
+@media screen and (min-width: 1620px) {
+  .hero {
+    background-image: url(../images/hero-bg.png), -webkit-gradient(linear, left top, right top, from(#040013), color-stop(54.31%, #42063f), color-stop(99.9%, #3a047d));
+    background-image: url(../images/hero-bg.png), linear-gradient(90deg, #040013 0%, #42063f 54.31%, #3a047d 99.9%);
+    background-repeat: no-repeat;
+    background-position: right 25% bottom 0, 0 0;
+    background-size: auto;
   }
 }
 .hero__title {

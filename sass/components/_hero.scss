@@ -6,14 +6,20 @@
     #42063f 54.31%,
     #3a047d 99.9%
   );
-
-  &__container {
-    height: 538px;
-    @media screen and (min-width: 1200px) {
-      background-image: url(../images/hero-bg.png);
-      background-repeat: no-repeat;
-      background-position: right 0 bottom 0;
-    }
+  @media screen and (min-width: 1220px) {
+    background-image: url(../images/hero-bg.png),
+      linear-gradient(90deg, #040013 0%, #42063f 54.31%, #3a047d 99.9%);
+    background-repeat: no-repeat;
+    background-size: 637px 338px, auto;
+    background-position: right 25% bottom 0, 0 0;
+  }
+  height: 538px;
+  @media screen and (min-width: 1620px) {
+    background-image: url(../images/hero-bg.png),
+      linear-gradient(90deg, #040013 0%, #42063f 54.31%, #3a047d 99.9%);
+    background-repeat: no-repeat;
+    background-position: right 25% bottom 0, 0 0;
+    background-size: auto;
   }
   &__title {
     margin: 0;
